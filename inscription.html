@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>office de formation professionnelle et promotion du travail</title>
+    <link rel="stylesheet" href="inscription.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href=""><img src="img/Logo-OFPPT-en-Arabe (1).jpg" alt=""></a>
+
+            <div class="nav-link" id="navLink">
+                <i class="fa-solid fa-xmark icon" onclick="hidemenu()"></i>
+                <ul >
+            
+                    <li><a href="OFPPT.html">OFPPT</a>
+                    <select name="choix" id="choix">
+                        <option value="Qui sommes nous ?">Qui sommes nous ?</option>
+                        <option value="Offre de formation">Offre de formation</option>
+                        <option value="Appels d'offres">Appels d'offres</option>
+                        <option value="Coopération internationale">Coopération internationale</option>
+                        <option value="OFPPT TV">OFPPT TV</option>
+
+                    </select>
+                    </li>
+                    <li><a href="Capital Humain.html">Capital Humain</a>
+                    <select name="choix1" id="choix1">
+                        <option value="Notre capital humain">Notre capital humain</option>
+                        <option value="Offres">Offres d'emploi</option>
+                        <option value="Déposer">Déposer ma candidature</option>
+                        <option value="Retraités">Retraités</option>
+                        
+                    </select>
+                    </li>
+                    <li><a href="Newsroom.html">Newsroom</a>
+                    <select name="choix2" id="choix2">
+                        <option value="Communiqués de presse">Communiqués de presse</option>
+                        <option value="Publications et documents">Publications et documents</option>
+                        <option value=" Social Media Hub"> Social Media Hub</option>
+
+                    </select>
+                    </li>
+                    <li><a href="Espace Globale.html">Espace Globale</a>
+                    <select name="choix3" id="choix3">
+                        <option value="TROUVER UNE FORMATION">TROUVER UNE FORMATION</option>
+                        <option value="ESPACE STAGIAIRE">ESPACE STAGIAIRE</option>
+                        <option value="ESPACE ENTREPRISE">ESPACE ENTREPRISE</option>
+                    </select>
+                    </li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="inscription.html" class="button">Sign Up</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars icon" onclick="showmenu()"></i>
+        </nav>
+
+    </section>
+</section>
+    
+    <section name="inscription" id="inscription">
+        <h2>Inscription stagiaires</h2>
+
+<form id="studentForm">
+<label for="firstName">Prénom:</label>
+<input type="text" id="firstName" name="firstName" required>
+
+<label for="lastName">Nom:</label>
+<input type="text" id="lastName" name="lastName" required>
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="password">Mot de passe:</label>
+<input type="password" id="password" name="password" required>
+
+<button type="button" id="signupButton" onclick="submitForm()">S'inscrire</button>
+</form>
+    </section>
+
+    <section class="footer">
+        <h4>Info About Me</h4>
+        <p>I am a student with a bachelor's degree in economics and I have done a number of trainings and Master of the speciality comptabilité ,controle et l'audit . I am currently pursuing my studies in the digital development course in the Office of Vocational Training and Work Promotion.</p>
+        <div class="social">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+        <p>Made By : Benkhalifa Mohcine  <i class="fa fa-heart-o" style="color: red;"></i> Thank You</p>
+        
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube"></i>
+        
+    </section>
+
+    <script>
+        var navLink = document.getElementById("navLink");
+        function hidemenu(){
+            navLink.style.right ="-200px"
+        }
+        function showmenu(){
+            navLink.style.right = "0px"
+        }
+        function submitForm() {
+        // Ajoutez ici le code pour le traitement du formulaire
+        alert('Inscription en cours...'); // Exemple: une alerte pour montrer que le formulaire a été soumis
+    }
+
+    // Fonction JavaScript pour gérer le clic sur le bouton "Sign Up"
+    document.getElementById('signupButton').addEventListener('click', function() {
+        // Vous pouvez ajouter ici le code pour le traitement de l'inscription
+        alert('Inscription en cours...'); // Exemple : une alerte pour montrer que le clic fonctionne
+    });
+    </script>
+</body>
+</html>
